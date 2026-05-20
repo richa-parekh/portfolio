@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class Navbar extends Component
+class SectionHeading extends Component
 {
     /**
      * Create a new component instance.
@@ -21,6 +21,6 @@ class Navbar extends Component
      */
     public function render()
     {
-        return view('components.navbar');
+        return view('components.section-heading');
     }
 }
