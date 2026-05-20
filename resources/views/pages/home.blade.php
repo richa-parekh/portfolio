@@ -59,14 +59,12 @@
                 <p class="text-gray-600 mt-2">A few projects showcasing my work. </p>
             </div>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">    
-            <div class="bg-white rounded-3xl shadow overflow-hidden">        
-                <img src="{{ asset('images/project1.jpg') }}"class="w-full h-60 object-cover" alt="Project 1">
-                <div class="p-6">        
-                    <h3 class="text-xl font-semibold"> Business Website </h3>        
-                    <p class="text-gray-600 mt-3"> Responsive WordPress website for business presence.</p>
-                </div>    
-            </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            @foreach($projects as $project)
+                <x-project-card
+                    :project="$project"
+                />
+            @endforeach
         </div>
         <div class="flex justify-center items-center">
             <a href="/portfolio" class="mt-8 bg-black text-white px-8 py-4 rounded-xl"> Browse All </a>
