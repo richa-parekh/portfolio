@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\ContactMessage;
 use Illuminate\Http\Request;
-
+use App\Http\Requests\ContactRequest;
 class ContactController extends Controller
 {
     public function index()
@@ -11,20 +11,13 @@ class ContactController extends Controller
         return view('pages.contact');
     }
 
-    public function store(Request $request)
+    public function store(ContactRequest $request)
     {
-        $validated = $request->validate([
-            'name' => 'required|max:100',
-            'email' => 'required|email',
-            'project_type' => 'required',
-            'message' => 'required|min:10'
-        ]);
-
-        ContactMessage::create($validated);
+        ContactMessage::create($request->validated());
 
         return back()->with(
             'success',
-            'Message sent successfully!'
+            'Thank you! Your message has been sent.'
         );
     }
 }

@@ -1,12 +1,87 @@
-<form method="POST" action="{{ route('contact.store') }}" class="space-y-5">
-    @csrf
-    <input type="text" name="name" placeholder="Your Name" class="w-full border p-3">
-    <input type="email" name="email" placeholder="Your Email" class="w-full border p-3">
-    <select name="project_type" class="w-full border p-3"> 
-        <option>WordPress</option>
-        <option>Laravel</option>     
-        <option>Website Design</option>  
-    </select>
-    <textarea name="message" class="w-full border p-3"></textarea>
-    <button class="bg-black text-white px-6 py-3 rounded">Send Message</button>
-</form>
+@extends('layouts.app')
+@section('title', 'Contact')
+
+@section('content')
+<section class="py-24">
+    <div class="max-w-4xl mx-auto px-6">
+        <x-section-heading
+            title="Let's Work Together"
+            subtitle="Have a project in mind? Send me a message."
+        />
+        <!-- Success Message -->
+        @if(session('success'))
+            <div class="bg-green-100 text-green-700 p-4 rounded-xl mb-8">
+                {{ session('success') }}
+            </div>
+        @endif
+
+        <div class="bg-white rounded-3xl shadow-sm p-8">
+            <form method="POST" action="{{ route('contact.store') }}" class="space-y-6">
+
+                @csrf
+
+                <!-- Name -->
+                <div>
+                    <label class="font-medium">Name</label>
+
+                    <input type="text" name="name" value="{{ old('name') }}" class="w-full mt-2 border rounded-xl p-4" placeholder="Your Name">
+
+                    @error('name')
+                        <p class="text-red-500 text-sm mt-2">
+                            {{ $message }}
+                        </p>
+                    @enderror
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label class="font-medium">Email</label>
+                    <input type="email" name="email" value="{{ old('email') }}" class="w-full mt-2 border rounded-xl p-4" placeholder="your@email.com">
+
+                    @error('email')
+                        <p class="text-red-500 text-sm mt-2">
+                            {{ $message }}
+                        </p>
+                    @enderror
+
+                </div>
+                <!-- Project Type -->
+                <div>
+                    <label class="font-medium">Project Type</label>
+
+                    <select name="project_type" class="w-full mt-2 border rounded-xl p-4">
+                        <option value="">Select Project Type</option>
+                        <option value="WordPress">WordPress Website</option>
+                        <option value="Laravel">Laravel Development</option>
+                        <option value="Design">Website Design</option>
+                    </select>
+
+                    @error('project_type')
+                        <p class="text-red-500 text-sm mt-2">
+                            {{ $message }}
+                        </p>
+                    @enderror
+                </div>
+                <!-- Message -->
+                <div>
+                    <label class="font-medium">Message</label>
+
+                    <textarea name="message" rows="6" class="w-ful mt-2 border rounded-xl p-4" placeholder="Tell me about your project...">{{ old('message') }}</textarea>
+
+                    @error('message')
+                        <p class="text-red-500 text-sm mt-2">
+                            {{ $message }}
+                        </p>
+                    @enderror
+
+                </div>
+
+                <button class="bg-black text-white px-8 py-4 rounded-xl hover:opacity-90 transition">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+@endsection
