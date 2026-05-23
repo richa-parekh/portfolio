@@ -2,7 +2,7 @@
 @section('title', 'Contact')
 
 @section('content')
-<section class="py-24">
+<section class="py-20 md:py-20 md:py-24">
     <div class="max-w-4xl mx-auto px-6">
         <x-section-heading
             title="Let's Work Together"
@@ -24,7 +24,7 @@
                 <div>
                     <label class="font-medium">Name</label>
 
-                    <input type="text" name="name" value="{{ old('name') }}" class="w-full mt-2 border rounded-xl p-4" placeholder="Your Name">
+                    <input type="text" name="name" value="{{ old('name') }}" class="w-full border rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
 
                     @error('name')
                         <p class="text-red-500 text-sm mt-2">
@@ -36,7 +36,7 @@
                 <!-- Email -->
                 <div>
                     <label class="font-medium">Email</label>
-                    <input type="email" name="email" value="{{ old('email') }}" class="w-full mt-2 border rounded-xl p-4" placeholder="your@email.com">
+                    <input type="email" name="email" value="{{ old('email') }}" class="w-full border rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="your@email.com">
 
                     @error('email')
                         <p class="text-red-500 text-sm mt-2">
@@ -49,7 +49,7 @@
                 <div>
                     <label class="font-medium">Project Type</label>
 
-                    <select name="project_type" class="w-full mt-2 border rounded-xl p-4">
+                    <select name="project_type" class="w-full border rounded-xl p-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="">Select Project Type</option>
                         <option value="WordPress">WordPress Website</option>
                         <option value="Laravel">Laravel Development</option>

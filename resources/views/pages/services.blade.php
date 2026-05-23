@@ -5,7 +5,7 @@
 @section('content')
 
 <!-- Hero -->
-<section class="py-24 bg-gray-50">
+<section class="py-20 md:py-24 bg-gray-50">
     <div class="max-w-4xl mx-auto px-6 text-center">
         <h1 class="text-5xl font-bold"> My Services </h1>
         <p class="mt-6 text-lg text-gray-600">
@@ -17,13 +17,13 @@
 </section>
 
 <!-- Services -->
-<section class="py-24">
-    <div class="max-w-7xl mx-auto px-6">
+<section class="py-20 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
         <x-section-heading
             title="What I Offer"
             subtitle="Professional web development services tailored for businesses."
         />
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- WordPress -->
             <div class="bg-white p-8 rounded-3xl shadow-sm">
                 <h3 class="text-2xl font-semibold">
@@ -70,13 +70,13 @@
 </section>
 
 <!-- Process -->
-<section class="py-24 bg-gray-100">
-    <div class="max-w-7xl mx-auto px-6">
+<section class="py-20 md:py-24 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
         <x-section-heading
             title="How I Work"
             subtitle="A simple process focused on clarity and results."
         />
-        <div class="grid md:grid-cols-3 gap-10">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
             <div>
                 <h3 class="text-xl font-semibold">
                     01. Discussion

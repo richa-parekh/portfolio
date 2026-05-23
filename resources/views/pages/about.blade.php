@@ -2,8 +2,8 @@
 @section('title', 'About')
 @section('content')
 
-<section class="py-24">
-    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+<section class="py-20 md:py-20 md:py-24">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 grid lg:grid-cols-2 gap-16 items-center">
 
         <!-- Image -->
         <div>

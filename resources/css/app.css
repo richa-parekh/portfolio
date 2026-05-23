@@ -6,6 +6,36 @@
 @source '../**/*.js';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Brand Colors */
+    --color-primary: #2c3640;
+    --color-primary-light: #f2f6eb;
+    --color-secondary: #a69b8a;
+    
+    /* Text Colors */
+    --color-dark: #2c3640;
+    --color-light: #f2f6eb;
+
+    /* Backgrounds */
+    --color-background-light: #f2f6eb;
+    --color-background-dark: #2c3640;
+
+    /* Border */
+    --color-border-light: #f2f6eb;
+    --color-border-dark: #2c3640;
+
+    /* Fonts */
+    --font-arvo: "Fugaz One", sans-serif;
+    --font-lato: "Work Sans", sans-serif;
+    /* --font-arvo: "Arvo", serif;
+    --font-lato: "Lato", sans-serif;
+    --font-arima: "Arima", system-ui;
+    --font-mulish: "Mulish", sans-serif;
+    --font-oswald: "Oswald", sans-serif;
+    --font-source-serif: "Source Serif 4", serif; 
+    --font-fugaz: "Fugaz One", sans-serif;
+    --font-work-sans: "Work Sans", sans-serif;
+    */
+
 }
