@@ -9,32 +9,34 @@
     <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col-reverse lg:flex-row justify-between items-center gap-16">  
     <!-- Left Content --> 
             
-            <div class="max-w-xl text-center lg:text-left border-t-5 border-dark">
+            <div class="max-w-xl text-center lg:text-left">
+                <hr class="border-dark border-4 w-40 mb-6 mx-auto lg:mx-0">
                 <!-- <p class="text-gray-500 font-medium"> Freelance Web Developer </p> -->
-                <h1 class="font-arvo text-4xl md:text-5xl lg:text-7xl font-bold text-dark leading-tight mt-3 uppercase"> Hello, I'm <span class="text-dark"> Richa </span></h1>
-                <p class="font-lato mt-6 text-dark leading-snug text-justify text-xl "> A web developer who creates unique, user-friendly websites, helping small businesses grow their online presence through WordPress, Laravel, and responsive web design. </p>
+                <h1 class="font-arvo text-4xl md:text-5xl lg:text-6xl font-bold text-dark leading-tight mt-3 uppercase"> Hello, I'm <span class="text-dark"> Richa </span></h1>
+                <p class="font-lato mt-6 text-dark text-xl "> A web developer who creates unique, user-friendly websites, helping small businesses grow their online presence through WordPress, Laravel, and responsive web design. </p>
                 <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
-                <a href="/portfolio" class="bg-dark text-white px-6 py-3 hover:opacity-90 transition font-lato" > View Work </a>
-                <a href="/contact" class="border border-dark px-6 py-3 hover:bg-dark hover:text-white transition font-lato" > Contact Me </a>
+                <a href="/portfolio" class="bg-dark text-white uppercase px-6 py-3 hover:opacity-90 transition font-lato" > View Work </a>
+                <a href="/contact" class="border border-dark px-6 py-3 uppercase hover:bg-dark hover:text-white transition font-lato" > Contact Me </a>
             </div> 
         </div>
         <!-- Right Image --> 
         <div class="max-w-md lg:max-w-lg">
-            <img src="{{ asset('images/profile_image.png') }}" alt="Richa Portfolio Hero Image" class="w-full max-w-md mx-auto rounded-3xl shadow-xl">
+            <img src="{{ asset('images/profile_picture.png') }}" alt="Richa Portfolio Hero Image" class="w-full">
         </div>
     </div>
 </section>
 <!-- Services Section -->
-<section class="py-20 md:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 md:px-6">
-        <div class="text-center mb-14">
-            <h2 class="text-4xl font-bold">
-                Services
+<section class="py-20 md:py-24 bg-dark text-white">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col-reverse lg:flex-row justify-between items-center gap-16">
+        <div class="max-w-xl text-center lg:text-left">
+            <h2 class="text-4xl font-bold uppercase">
+                Services <br> Offer
             </h2>
-            <p class="text-gray-600 mt-3"> Helping businesses build fast, modern and responsive websites.
+            <p class="text-light mt-3 pb-3"> Helping businesses build fast, modern and responsive websites.
             </p>
+            <a href="/contact" class="border border-dark  uppercase hover:bg-light hover:text-dark transition font-lato rounded-full px-3 py-5 text-2xl" > Contact Me </a>
         </div>
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="max-w-md lg:max-w-lg grid md:grid-rows-3 gap-8">
             <div class="bg-gray-50 p-8 rounded-3xl">
                 <h3 class="text-2xl font-semibold"> WordPress Development </h3>
                 <p class="text-gray-600 mt-4"> Custom business websites, landing pages, speed optimization and theme customization.

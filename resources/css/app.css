@@ -26,8 +26,9 @@
     --color-border-dark: #2c3640;
 
     /* Fonts */
-    --font-arvo: "Fugaz One", sans-serif;
-    --font-lato: "Work Sans", sans-serif;
+    --font-arvo: "Inter", sans-serif;
+    --font-lato: "Inter", sans-serif;
+    --font-inter: "Inter", sans-serif;
     /* --font-arvo: "Arvo", serif;
     --font-lato: "Lato", sans-serif;
     --font-arima: "Arima", system-ui;
