@@ -13,7 +13,7 @@
                 > Portfolio </a>
                 <a href="/about" class="{{ request()->is('about') ? 'text-dark font-semibold' : 'hover:text-dark transition' }} font-lato"
                 > About </a>
-                <a href="/contact" class="{{ request()->is('contact') ? 'text-light bg-background-dark font-semibold' : 'text-dark transition' }} border-2 border-border-dark px-7 py-1 hover:opacity-90 hover:bg-background-dark hover:text-light font-lato" > Contact </a>
+                <a href="/contact" class="{{ request()->is('contact') ? 'text-light bg-background-dark font-semibold' : 'text-dark transition' }} border-2 border-border-dark px-7 py-1 hover:opacity-90 hover:bg-background-dark hover:text-light font-lato transition duration-300" > Contact </a>
             </div>
 
             <!-- Mobile Contact -->

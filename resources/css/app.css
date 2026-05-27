@@ -28,7 +28,7 @@
     /* Fonts */
     --font-arvo: "Inter", sans-serif;
     --font-lato: "Inter", sans-serif;
-    --font-inter: "Inter", sans-serif;
+    
     /* --font-arvo: "Arvo", serif;
     --font-lato: "Lato", sans-serif;
     --font-arima: "Arima", system-ui;
@@ -37,6 +37,17 @@
     --font-source-serif: "Source Serif 4", serif; 
     --font-fugaz: "Fugaz One", sans-serif;
     --font-work-sans: "Work Sans", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-syne: "Syne", sans-serif;
+    --font-plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+    --font-space-mono: "Space Mono", monospace;
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-varela: "Varela", sans-serif;
+    --font-archivo: "Archivo", sans-serif;
     */
 
+}
+
+html {
+    scroll-behavior: smooth;
 }

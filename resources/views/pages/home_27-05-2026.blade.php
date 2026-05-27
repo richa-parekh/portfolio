@@ -5,42 +5,60 @@
 @section('content')
 
 <!-- Hero Section -->
-<section class="min-h-screen bg-light flex items-center overflow-hidden ">
+<section class="py-20 md:py-24 bg-background-light">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col-reverse lg:flex-row justify-between items-center gap-16">  
+    <!-- Left Content --> 
+            
+            <div class="max-w-xl text-center lg:text-left">
+                <hr class="border-dark border-4 w-40 mb-6 mx-auto lg:mx-0">
+                <!-- <p class="text-gray-500 font-medium"> Freelance Web Developer </p> -->
+                <h1 class="font-arvo text-4xl md:text-5xl lg:text-5xl font-sem6bold text-dark leading-tight mt-3 uppercase tracking-widest"> Hello, I'm <span class="text-dark"> Richa </span></h1>
+                <p class="font-lato mt-6 text-dark text-xl "> A web developer who creates unique, user-friendly websites, helping small businesses grow their online presence through WordPress, Laravel, and responsive web design. </p>
+                <div class="mt-8 flex flex-wrap justify-center lg:justify-start gap-4">
+                <a href="/portfolio" class="bg-dark text-white uppercase px-6 py-3 hover:opacity-90 transition font-lato" > View Work </a>
+                <a href="/contact" class="border border-dark px-6 py-3 uppercase hover:bg-dark hover:text-white transition font-lato" > Contact Me </a>
+            </div> 
+        </div>
+        <!-- Right Image --> 
+        <div class="max-w-md lg:max-w-lg">
+            <img src="{{ asset('images/profile_picture.png') }}" alt="Richa Portfolio Hero Image" class="w-full">
+        </div>
+    </div>
+</section>
+
+<section class="min-h-screen bg-light flex items-center relative overflow-hidden">
     <div class="container mx-auto px-6 lg:px-12">
-        <div class="grid lg:grid-cols-2 items-center relative">
+        <div class="grid lg:grid-cols-2 items-center gap-10">
 
             <!-- Left Content -->
-            <div class="relative z-20 lg:pr-0">
+            <div class="space-y-8">
 
                 <!-- Decorative Line -->
-                <div class="w-32 h-2 bg-dark mb-10"></div>
+                <div class="w-32 h-1 bg-dark"></div>
 
                 <!-- Heading -->
-               
-                    <h1 class="text-5xl md:text-5xl xl:text-[70px]
-                    font-semibold uppercase text-dark
-                    leading-[0.95] tracking-widest
-                    lg:w-[850px] relative z-20">
+                <div>
+                    <h1 class="text-5xl md:text-5xl xl:text-6xl font-extrabold uppercase text-dark leading-tight">
                         I'M RICHA A <br>
                         WEB DEVELOPER
                     </h1>
-               
+                </div>
 
                 <!-- Description -->
-                <p class="mt-8 text-lg text-dark max-w-lg">
-                    Who creates unique, user-friendly websites, helping businesses grow their online presence through <strong>WordPress</strong>, <strong>Laravel</strong>, and <strong>responsive web design</strong>.
+                <p class="text-lg md:text-xl text-gray-700 max-w-xl leading-relaxed">
+                    A web developer who creates unique, user-friendly websites, helping businesses grow their online presence through WordPress, Laravel, and responsive web design.
                 </p>
 
                 <!-- CTA Button -->
-                <a href="/contact"
-                    class="mt-10 inline-block text-xl bg-dark text-light px-10 py-4 uppercase tracking-wide font-semibold border-2 border-dark transition duration-300 hover:bg-background-light hover:text-dark ">
+                <a href="#contact"
+                    class="inline-block bg-dark text-light px-10 py-4 uppercase tracking-wide font-semibold hover:bg-dark-700 transition duration-300">
                     Let's Talk
                 </a>
             </div>
 
             <!-- Right Image -->
-            <div class="relative lg:-ml-40 z-10 flex justify-end mt-12 lg:mt-0">
-                <div class="w-full max-w-[500px] h-[500px] overflow-hidden">
+            <div class="relative flex justify-center lg:justify-end">
+                <div class="w-full max-w-[700px] h-[700px] overflow-hidden">
                     <img
                         src="{{ asset('images/profile_picture.png') }}"
                         alt="Hero Image"
@@ -52,10 +70,10 @@
     </div>
 
     <!-- Scroll Button -->
-    <div class="hidden md:flex absolute bottom-8 right-8 z-50   ">
+    <div class="hidden md:flex absolute bottom-8 right-8">
         <button class="w-28 h-28 rounded-full bg-slate-800 flex items-center justify-center hover:scale-105 transition">
             <svg xmlns="http://www.w3.org/2000/svg"
-                class="w-10 h-10 text-light"
+                class="w-10 h-10 text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor">
