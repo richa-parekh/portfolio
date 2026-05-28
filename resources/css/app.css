@@ -8,23 +8,37 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
-    /* Brand Colors */
-    --color-primary: #2c3640;
-    --color-primary-light: #f2f6eb;
-    --color-secondary: #a69b8a;
+    /* Primary Color palette based on #2c333e */
+    --color-primary-950: #030405;
+    --color-primary-900: #090a0c;
+    --color-primary-800: #121419;
+    --color-primary-700: #1a1f25;
+    --color-primary-600: #232932;
+    --color-primary-500: #2c333e; /* base */
+    --color-primary-400: #565c65;
+    --color-primary-300: #80858b;
+    --color-primary-200: #abadb2;
+    --color-primary-100: #d5d6d8;
+    --color-primary-50: #f0f1f2;
+
+ 
+    /* Secondary color palette based on #ebeae3 */
+    --color-secondary-50:  #fbfaf8;
+    --color-secondary-100: #f6f5f0;
+    --color-secondary-200: #f0ebe4;
+    --color-secondary-300: #e7e2d8;
+    --color-secondary-400: #e0d8ce;
+    --color-secondary-500: #ebeae3; /* base */
+    --color-secondary-600: #d3cbbc;
+    --color-secondary-700: #b9a997;
+    --color-secondary-800: #9a8063;
+    --color-secondary-900: #7b654f;
+    --color-secondary-950: #4b3f36;
+
+    /* Convenience aliases */
+    --color-primary-default: var(--color-primary-500);
+    --color-secondary-default: var(--color-secondary-500);
     
-    /* Text Colors */
-    --color-dark: #2c3640;
-    --color-light: #f2f6eb;
-
-    /* Backgrounds */
-    --color-background-light: #f2f6eb;
-    --color-background-dark: #2c3640;
-
-    /* Border */
-    --color-border-light: #f2f6eb;
-    --color-border-dark: #2c3640;
-
     /* Fonts */
     --font-arvo: "Inter", sans-serif;
     --font-lato: "Inter", sans-serif;
