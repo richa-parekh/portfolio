@@ -16,15 +16,15 @@
                 <div class="w-32 h-2 bg-primary-default mb-10"></div>
 
                 <!-- Heading -->
-               
-                    <h1 class="text-5xl md:text-5xl xl:text-[70px]
+
+                <h1 class="text-5xl md:text-5xl xl:text-[70px]
                     font-semibold uppercase text-primary-default
                     leading-[0.95] tracking-widest
                     lg:w-212.5 relative z-20">
-                        HELLO, I'M RICHA A <br>
-                        WEB DEVELOPER
-                    </h1>
-               
+                    HELLO, I'M RICHA A <br>
+                    WEB DEVELOPER
+                </h1>
+
 
                 <!-- Description -->
                 <p class="mt-8 text-lg text-primary-default max-w-lg">
@@ -68,13 +68,13 @@
     </div>
 </section>
 <!-- Services Section -->
-<section id="services" class="bg-primary-default text-secondary-default py-24 lg:py-32">
+<section id="services" x-data="{ active: 1 }" class="bg-primary-default text-secondary-default py-24 lg:py-32">
     <div class="container mx-auto px-6 lg:px-12">
 
         <div class="grid lg:grid-cols-12 gap-16">
 
             <!-- LEFT SIDE -->
-            <div class="lg:col-span-4">
+            <div class="lg:col-span-5">
 
                 <!-- Decorative line -->
                 <div class="w-32 h-2 bg-secondary-default mb-10"></div>
@@ -108,101 +108,189 @@
             </div>
 
             <!-- RIGHT SIDE -->
-            <div class="lg:col-span-8">
+            <div class="lg:col-span-7 divide-y divide-secondary-default">
 
-                <!-- Service Item -->
-                <div class="border-b border-primary-300 pb-10">
-                    <div class="flex justify-between items-start gap-6">
+                <!-- SERVICE 01 -->
+                <div
+                    @click="active = active === 1 ? null : 1"
+                    class="py-8 cursor-pointer border-b border-primary-default">
 
-                        <div>
-                            <div class="flex items-start gap-6">
+                    <!-- TOP ROW -->
+                    <div class="flex justify-between items-center gap-6">
 
-                                <span class="text-6xl font-bold">
-                                    01
-                                </span>
+                        <!-- Left Content -->
+                        <div class="flex items-center gap-6">
 
-                                <div>
-                                    <h3 class="text-4xl font-light">
-                                        Web Design
-                                    </h3>
+                            <!-- Number -->
+                            <span class="text-5xl lg:text-6xl font-bold shrink-0">
+                                01
+                            </span>
 
-                                    <p class="mt-6 text-primary-100 text-lg leading-relaxed max-w-3xl">
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                    </p>
-                                </div>
+                            <!-- Heading -->
+                            <h3 class="text-2xl lg:text-3xl font-light">
+                                Web Design
+                            </h3>
 
-                            </div>
                         </div>
 
-                        <!-- Arrow Button -->
-                        <button
-                            class="w-16 h-16 rounded-full bg-secondary-default
-                            flex items-center justify-center
-                            text-primary-default shrink-0">
+                        <!-- Fixed Arrow -->
+                        <div
+                            class="w-8 h-8 rounded-full bg-secondary-default text-primary-default flex items-center justify-center shrink-0 transition-transform duration-500"
+                            :class="active === 1 ? 'rotate-45' : ''">
 
-                            ↗
-                        </button>
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H8M17 7V16" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- DESCRIPTION -->
+                    <div
+                        x-show="active === 1"
+                        x-collapse
+                        class="overflow-hidden">
+
+                        <p class="ml-[95px] text-secondary-default text-lg leading-relaxed max-w-3xl">
+                            I design beautiful and conversion-focused
+                            websites that improve user experience and
+                            reflect your brand identity.
+                        </p>
+
                     </div>
                 </div>
 
-                <!-- Service Item -->
-                <div class="border-b border-slate-500 py-10">
-                    <div class="flex justify-between items-center">
+                <!-- SERVICE 02 -->
+                <div
+                    @click="active = active === 2 ? null : 2"
+                    class="py-8 cursor-pointer transition-all duration-500">
 
+                    <div class="flex justify-between items-center gap-6">
+
+                        <!-- Left Content -->
                         <div class="flex items-center gap-6">
-                            <span class="text-6xl font-bold">
+
+                            <!-- Number -->
+                            <span class="text-5xl lg:text-6xl font-bold shrink-0">
                                 02
                             </span>
 
-                            <h3 class="text-4xl font-light">
+                            <!-- Heading -->
+                            <h3 class="text-2xl lg:text-3xl font-light">
                                 WordPress Development
                             </h3>
+
                         </div>
 
-                        <button
-                            class="w-16 h-16 rounded-full bg-secondary-default
-                            flex items-center justify-center
-                            text-primary-800 shrink-0">
+                        <!-- Fixed Arrow -->
+                        <div
+                            class="w-8 h-8 rounded-full bg-secondary-default text-primary-default
+            flex items-center justify-center
+            shrink-0 transition-transform duration-500"
+                            :class="active === 2 ? 'rotate-45' : ''">
 
-                            ↗
-                        </button>
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H8M17 7V16" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- DESCRIPTION -->
+                    <div
+                        x-show="active === 2"
+                        x-collapse
+                        class="overflow-hidden">
+
+                        <p class="ml-[95px] text-secondary-default text-lg leading-relaxed max-w-3xl">
+                            I design beautiful and conversion-focused
+                            websites that improve user experience and
+                            reflect your brand identity.
+                        </p>
+
                     </div>
                 </div>
 
-                <!-- Service Item -->
-                <div class="py-10">
-                    <div class="flex justify-between items-center">
+                <!-- SERVICE 03 -->
+                <div
+                    @click="active = active === 3 ? null : 3"
+                    class="py-8 cursor-pointer transition-all duration-500">
 
+                    <div class="flex justify-between items-center gap-6">
+
+                        <!-- Left Content -->
                         <div class="flex items-center gap-6">
-                            <span class="text-6xl font-bold">
+
+                            <!-- Number -->
+                            <span class="text-5xl lg:text-6xl font-bold shrink-0">
                                 03
                             </span>
 
-                            <h3 class="text-4xl font-light">
-                                Webflow Development
+                            <!-- Heading -->
+                            <h3 class="text-2xl lg:text-3xl font-light">
+                                Laravel Development
                             </h3>
+
                         </div>
 
-                        <button
-                            class="w-16 h-16 rounded-full bg-secondary-default
-                            flex items-center justify-center
-                            text-primary-800 shrink-0">
+                        <!-- Fixed Arrow -->
+                        <div
+                            class="w-8 h-8 rounded-full bg-secondary-default text-primary-default
+            flex items-center justify-center
+            shrink-0 transition-transform duration-500"
+                            :class="active === 3 ? 'rotate-45' : ''">
 
-                            ↗
-                        </button>
+                            <svg
+                                class="w-6 h-6"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24">
+
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M7 17L17 7M17 7H8M17 7V16" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <!-- DESCRIPTION -->
+                    <div
+                        x-show="active === 3"
+                        x-collapse
+                        class="overflow-hidden">
+
+                        <p class="ml-[95px] text-secondary-default text-lg leading-relaxed max-w-3xl">
+                            I design beautiful and conversion-focused
+                            websites that improve user experience and
+                            reflect your brand identity.
+                        </p>
+
                     </div>
                 </div>
 
             </div>
-
         </div>
-    </div>
 </section>
 <!-- Featured section -->
- <section class="py-20 md:py-24">
+<section class="py-20 md:py-24">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
         <div class=" mb-14">
             <div>
@@ -212,9 +300,8 @@
         </div>
         <div class="grid md:grid-cols-3 gap-8">
             @foreach($projects as $project)
-                <x-project-card
-                    :project="$project"
-                />
+            <x-project-card
+                :project="$project" />
             @endforeach
         </div>
         <div class="flex justify-center items-center">
@@ -223,29 +310,29 @@
     </div>
 </section>
 <!-- Why Work With Me Section -->
-<section class="py-20 md:py-24 bg-secondary-default text-primary-default"> 
-    <div class="max-w-7xl mx-auto px-4 md:px-6">     
-        <div class="text-center mb-14">     
-            <h2 class="text-4xl font-bold">Why Work With Me</h2>     
-        </div>     
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"> 
+<section class="py-20 md:py-24 bg-secondary-default text-primary-default">
+    <div class="max-w-7xl mx-auto px-4 md:px-6">
+        <div class="text-center mb-14">
+            <h2 class="text-4xl font-bold">Why Work With Me</h2>
+        </div>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-                <h3 class="font-semibold text-xl"> Responsive Design </h3>        
+                <h3 class="font-semibold text-xl"> Responsive Design </h3>
                 <p class="text-primary-default mt-2"> Websites optimized for all devices. </p>
-            </div>   
+            </div>
             <div>
                 <h3 class="font-semibold text-xl"> Clean Code </h3>
                 <p class="text-primary-default mt-2"> Structured and maintainable development. </p>
-            </div> 
+            </div>
             <div>
                 <h3 class="font-semibold text-xl"> Fast Communication </h3>
                 <p class="text-primary-default mt-2"> Clear updates during projects </p>
-            </div>  
+            </div>
             <div>
                 <h3 class="font-semibold text-xl"> Business Focused </h3>
                 <p class="text-primary-default mt-2"> Solutions that support business growth. </p>
-            </div>  
-        </div> 
+            </div>
+        </div>
     </div>
 </section>
 <!-- CTA section -->
