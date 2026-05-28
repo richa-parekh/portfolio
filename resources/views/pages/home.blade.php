@@ -33,7 +33,7 @@
 
                 <!-- CTA Button -->
                 <a href="/contact"
-                    class="mt-10 inline-block text-xl bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide font-semibold border-2 border-primary-default transition duration-300 hover:bg-background-secondary-default hover:text-primary-default ">
+                    class="mt-10 inline-block text-xl bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide font-semibold border-2 border-primary-default transition duration-300 hover:scale-105">
                     Let's Talk
                 </a>
             </div>
@@ -68,30 +68,136 @@
     </div>
 </section>
 <!-- Services Section -->
-<section class="py-20 md:py-24 bg-primary-default text-secondary-default">
-    <div class="max-w-7xl mx-auto px-4 md:px-6 flex flex-col-reverse lg:flex-row justify-between items-center gap-16">
-        <div class="max-w-xl text-center lg:text-left">
-            <h2 class="text-4xl font-bold uppercase">
-                Services <br> Offer
-            </h2>
-            <p class="text-secondary-default mt-3 pb-3"> Helping businesses build fast, modern and responsive websites.
-            </p>
-            <a href="/contact" class="border border-primary-default  uppercase hover:bg-secondary-default hover:text-primary-default transition font-lato rounded-full px-3 py-5 text-2xl" > Contact Me </a>
-        </div>
-        <div class="max-w-md lg:max-w-lg grid md:grid-rows-3 gap-8">
-            <div class="bg-gray-50 p-8 rounded-3xl">
-                <h3 class="text-2xl font-semibold"> WordPress Development </h3>
-                <p class="text-primary-default mt-4"> Custom business websites, landing pages, speed optimization and theme customization.
+<section id="services" class="bg-primary-default text-secondary-default py-24 lg:py-32">
+    <div class="container mx-auto px-6 lg:px-12">
+
+        <div class="grid lg:grid-cols-12 gap-16">
+
+            <!-- LEFT SIDE -->
+            <div class="lg:col-span-4">
+
+                <!-- Decorative line -->
+                <div class="w-32 h-2 bg-secondary-default mb-10"></div>
+
+                <!-- Heading -->
+                <h2 class="text-4xl lg:text-5xl font-bold uppercase leading-tight">
+                    Services I <br>
+                    Offer
+                </h2>
+
+                <!-- Description -->
+                <p class="mt-6 text-lg text-secondary-default leading-relaxed max-w-sm">
+                    I will help you with finding a solution and
+                    solve your problem.
                 </p>
+
+                <!-- CTA Circle Button -->
+                <div class="mt-20">
+                    <a href="#contact"
+                        class="w-35 h-35 rounded-full bg-secondary-default text-primary-default
+                        flex items-center justify-center
+                        text-2xl font-bold uppercase
+                        hover:scale-105 transition duration-300">
+
+                        <span class="text-center leading-tight">
+                            Let's <br> Talk
+                        </span>
+                    </a>
+                </div>
+
             </div>
-            <div class="bg-gray-50 p-8 rounded-3xl">
-                <h3 class="text-2xl font-semibold"> Laravel Development </h3>
-                <p class="text-primary-default mt-4"> Web applications, admin panels, APIs and custom PHP solutions. </p>
+
+            <!-- RIGHT SIDE -->
+            <div class="lg:col-span-8">
+
+                <!-- Service Item -->
+                <div class="border-b border-primary-300 pb-10">
+                    <div class="flex justify-between items-start gap-6">
+
+                        <div>
+                            <div class="flex items-start gap-6">
+
+                                <span class="text-6xl font-bold">
+                                    01
+                                </span>
+
+                                <div>
+                                    <h3 class="text-4xl font-light">
+                                        Web Design
+                                    </h3>
+
+                                    <p class="mt-6 text-primary-100 text-lg leading-relaxed max-w-3xl">
+                                        Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Arrow Button -->
+                        <button
+                            class="w-16 h-16 rounded-full bg-secondary-default
+                            flex items-center justify-center
+                            text-primary-default shrink-0">
+
+                            ↗
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Item -->
+                <div class="border-b border-slate-500 py-10">
+                    <div class="flex justify-between items-center">
+
+                        <div class="flex items-center gap-6">
+                            <span class="text-6xl font-bold">
+                                02
+                            </span>
+
+                            <h3 class="text-4xl font-light">
+                                WordPress Development
+                            </h3>
+                        </div>
+
+                        <button
+                            class="w-16 h-16 rounded-full bg-secondary-default
+                            flex items-center justify-center
+                            text-primary-800 shrink-0">
+
+                            ↗
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Service Item -->
+                <div class="py-10">
+                    <div class="flex justify-between items-center">
+
+                        <div class="flex items-center gap-6">
+                            <span class="text-6xl font-bold">
+                                03
+                            </span>
+
+                            <h3 class="text-4xl font-light">
+                                Webflow Development
+                            </h3>
+                        </div>
+
+                        <button
+                            class="w-16 h-16 rounded-full bg-secondary-default
+                            flex items-center justify-center
+                            text-primary-800 shrink-0">
+
+                            ↗
+                        </button>
+                    </div>
+                </div>
+
             </div>
-            <div class="bg-gray-50 p-8 rounded-3xl">
-                <h3 class="text-2xl font-semibold"> Website Design </h3>
-                <p class="text-primary-default mt-4"> Modern responsive designs focused on user experience. </p>
-            </div>
+
         </div>
     </div>
 </section>
