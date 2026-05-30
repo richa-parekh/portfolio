@@ -82,7 +82,7 @@
                         <div class="w-32 h-2 bg-secondary-default mb-10"></div>
 
                         <!-- Heading -->
-                        <h2 class="text-4xl lg:text-5xl font-bold uppercase leading-tight">
+                        <h2 class="text-4xl lg:text-5xl font-bold uppercase leading-tight text-secondary-default">
                             Services I <br class="hidden lg:block">
                             Offer
                         </h2>
@@ -424,38 +424,128 @@
         </div>
     </div>
 </section>
-<!-- Why Work With Me Section -->
-<section class="py-20 md:py-24 bg-secondary-default text-primary-default">
-    <div class="max-w-7xl mx-auto px-4 md:px-6">
-        <div class="text-center mb-14">
-            <h2 class="text-4xl font-bold">Why Work With Me</h2>
-        </div>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-                <h3 class="font-semibold text-xl"> Responsive Design </h3>
-                <p class="text-primary-default mt-2"> Websites optimized for all devices. </p>
+<!-- Testimonials Section -->
+ <section id="testimonials"
+    class="hidden bg-primary-default text-secondary-default py-24 lg:py-32 overflow-hidden">
+
+    <div class="container mx-auto px-6 lg:px-12">
+
+        <div class="grid lg:grid-cols-12 gap-14 lg:gap-20 items-center">
+
+            <!-- LEFT SIDE -->
+            <div class="lg:col-span-5">
+
+                <!-- Line -->
+                <div class="w-24 h-1 bg-secondary-default mb-8"></div>
+
+                <!-- Heading -->
+                <h2 class="text-5xl lg:text-7xl font-bold uppercase leading-tight">
+                    Testimonials
+                </h2>
+
+                <!-- Subtitle -->
+                <p class="mt-6 text-lg text-secondary-400">
+                    What people say about me
+                </p>
+
+                
+
             </div>
-            <div>
-                <h3 class="font-semibold text-xl"> Clean Code </h3>
-                <p class="text-primary-default mt-2"> Structured and maintainable development. </p>
-            </div>
-            <div>
-                <h3 class="font-semibold text-xl"> Fast Communication </h3>
-                <p class="text-primary-default mt-2"> Clear updates during projects </p>
-            </div>
-            <div>
-                <h3 class="font-semibold text-xl"> Business Focused </h3>
-                <p class="text-primary-default mt-2"> Solutions that support business growth. </p>
+
+            <!-- RIGHT SIDE -->
+            <div class="lg:col-span-7">
+
+                <!-- Client Image -->
+                <div class="mt-14 overflow-hidden">
+                    <img
+                        src="{{ asset('images/testimonials/testimonial_image.jpg') }}"
+                        alt="Client"
+                        class="w-full h-[350px] md:h-[500px] object-cover">
+                </div>
+                <!-- Quote Icon -->
+                <div class="text-7xl lg:text-8xl font-bold text-secondary-default">
+                    ❝
+                </div>
+
+                <!-- Testimonial -->
+                <h3
+                    class="mt-8 text-3xl md:text-4xl lg:text-5xl
+                    leading-tight font-light max-w-4xl">
+
+                    Sonali helped us build a software so
+                    intuitive that it didn't need a
+                    walkthrough. He solved complex
+                    problems with brilliant design.
+                </h3>
+
+                <!-- Client Info -->
+                <div class="mt-12">
+                    <h4 class="text-2xl font-medium">
+                        Andy Smith
+                    </h4>
+
+                    <p class="mt-2 text-secondary-400 text-lg">
+                        Founder, Apple
+                    </p>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <div class="mt-14 flex gap-5">
+
+                    <!-- Prev -->
+                    <button
+                        class="w-20 h-20 rounded-full bg-secondary-default
+                        text-primary-default flex items-center
+                        justify-center hover:scale-105
+                        transition duration-300">
+
+                        <svg
+                            class="w-8 h-8"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M15 19l-7-7 7-7"/>
+                        </svg>
+                    </button>
+
+                    <!-- Next -->
+                    <button
+                        class="w-20 h-20 rounded-full bg-secondary-default
+                        text-primary-default flex items-center
+                        justify-center hover:scale-105
+                        transition duration-300">
+
+                        <svg
+                            class="w-8 h-8"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24">
+
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+
+                </div>
+
             </div>
         </div>
     </div>
 </section>
 <!-- CTA section -->
-<section class="py-20 md:py-24">
+<section class="py-20 md:py-24 bg-secondary-default text-primary-default">
     <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="text-5xl font-bold">Let’s Build Your Website</h2>
         <p class="text-primary-default mt-5 text-lg">Need a website for your business? Let’s discuss your project.</p>
-        <a href="/contact" class="inline-block mt-8 bg-primary-default text-secondary-default px-8 py-4 rounded-xl">Contact Me</a>
+        <a href="/contact" class="inline-block mt-8 bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide font-semibold border-2 border-primary-default transition duration-300 hover:scale-105">Contact Me</a>
     </div>
 </section>
 @endsection
