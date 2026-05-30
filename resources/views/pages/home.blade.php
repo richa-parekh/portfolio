@@ -6,40 +6,40 @@
 
 <!-- Hero Section -->
 <section class="min-h-screen bg-secondary-default flex items-center overflow-hidden ">
-    <div class="container mx-auto px-6 lg:px-12">
-        <div class="grid lg:grid-cols-2 items-center relative">
+    <div class="container mx-auto py-6 px-6 lg:px-12">
+        <div class="grid lg:grid-cols-2 justify-center items-center relative">
 
             <!-- Left Content -->
             <div class="relative z-20 lg:pr-0">
 
                 <!-- Decorative Line -->
-                <div class="w-32 h-2 bg-primary-default mb-10"></div>
+                <div class="w-32 h-2 bg-primary-default mb-10 m-auto lg:mx-0 lg:mb-10"></div>
 
                 <!-- Heading -->
 
-                <h1 class="text-5xl md:text-5xl xl:text-[70px]
+                <h1 class="text-5xl text-center md:text-5xl xl:text-[70px]
                     font-semibold uppercase text-primary-default
                     leading-[0.95] tracking-widest
-                    lg:w-212.5 relative z-20">
+                    lg:w-212.5 relative z-20 lg:text-left">
                     HELLO, I'M RICHA A <br>
                     WEB DEVELOPER
                 </h1>
 
 
                 <!-- Description -->
-                <p class="mt-8 text-lg text-primary-default max-w-lg">
+                <p class="mt-8 text-lg text-primary-default max-w-lg text-center lg:text-left">
                     Who creates unique, user-friendly websites, helping businesses grow their online presence through <strong>WordPress</strong>, <strong>Laravel</strong>, and <strong>responsive web design</strong>.
                 </p>
 
                 <!-- CTA Button -->
                 <a href="/contact"
-                    class="mt-10 inline-block text-xl bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide font-semibold border-2 border-primary-default transition duration-300 hover:scale-105">
+                    class="mt-10 block mx-auto text-xl bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide font-semibold border-2 border-primary-default transition duration-300 hover:scale-105 w-fit lg:mx-0">
                     Let's Talk
                 </a>
             </div>
 
             <!-- Right Image -->
-            <div class="relative lg:-ml-40 z-10 flex justify-end mt-12 lg:mt-0">
+            <div class="relative lg:-ml-40 z-10 flex justify-center lg:justify-end mt-12 lg:mt-0">
                 <div class="w-full max-w-125 h-125 overflow-hidden">
                     <img
                         src="{{ asset('images/profile_picture.png') }}"
@@ -52,7 +52,7 @@
     </div>
 
     <!-- Scroll Button -->
-    <div class="hidden md:flex absolute bottom-8 right-8 z-50   ">
+    <!-- <div class="hidden md:flex absolute bottom-8 right-8 z-50   ">
         <button class="w-28 h-28 rounded-full bg-primary-default flex items-center justify-center hover:scale-105 transition">
             <svg xmlns="http://www.w3.org/2000/svg"
                 class="w-10 h-10 text-secondary-default"
@@ -65,55 +65,58 @@
                     d="M19 9l-7 7-7-7" />
             </svg>
         </button>
-    </div>
+    </div> -->
 </section>
 <!-- Services Section -->
 <section id="services" x-data="{ active: 1 }" class="bg-primary-default text-secondary-default py-24 lg:py-32">
     <div class="container mx-auto px-6 lg:px-12">
 
-        <div class="grid lg:grid-cols-12 gap-16">
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
 
             <!-- LEFT SIDE -->
             <div class="lg:col-span-5">
+                <div class="flex flex-row lg:flex-col">
 
-                <!-- Decorative line -->
-                <div class="w-32 h-2 bg-secondary-default mb-10"></div>
+                    <div class="basis-full">
+                        <!-- Decorative line -->
+                        <div class="w-32 h-2 bg-secondary-default mb-10"></div>
 
-                <!-- Heading -->
-                <h2 class="text-4xl lg:text-5xl font-bold uppercase leading-tight">
-                    Services I <br>
-                    Offer
-                </h2>
+                        <!-- Heading -->
+                        <h2 class="text-4xl lg:text-5xl font-bold uppercase leading-tight">
+                            Services I <br class="hidden lg:block">
+                            Offer
+                        </h2>
 
-                <!-- Description -->
-                <p class="mt-6 text-lg text-secondary-default leading-relaxed max-w-sm">
-                    I will help you with finding a solution and
-                    solve your problem.
-                </p>
+                        <!-- Description -->
+                        <p class="mt-6 text-lg text-secondary-default leading-relaxed max-w-sm">
+                            I will help you with finding a solution and
+                            solve your problem.
+                        </p>
 
-                <!-- CTA Circle Button -->
-                <div class="mt-20">
-                    <a href="#contact"
-                        class="w-35 h-35 rounded-full bg-secondary-default text-primary-default
-                        flex items-center justify-center
-                        text-2xl font-bold uppercase
-                        hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="basis-full">
+                        <!-- CTA Circle Button -->
+                        <div class="mx-0 lg:mt-20 h-full lg:h-auto flex items-center">
+                            <a href="#contact"
+                                class="w-30 h-30 lg:w-35 lg:h-35 rounded-full bg-secondary-default text-primary-default
+                                flex items-center justify-center
+                                text-2xl ml-auto my-auto lg:m-0 font-bold uppercase
+                                hover:scale-105 transition duration-300">
 
-                        <span class="text-center leading-tight">
-                            Let's <br> Talk
-                        </span>
-                    </a>
+                                <span class="text-center leading-tight">
+                                    Let's <br> Talk
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-
             </div>
 
             <!-- RIGHT SIDE -->
             <div class="lg:col-span-7 divide-y divide-secondary-default">
 
                 <!-- SERVICE 01 -->
-                <div
-                    @click="active = active === 1 ? null : 1"
-                    class="py-8 cursor-pointer border-b border-primary-default">
+                <div @click="active = active === 1 ? null : 1" class="py-8 cursor-pointer border-b border-secondary-default">
 
                     <!-- TOP ROW -->
                     <div class="flex justify-between items-center gap-6">
@@ -134,44 +137,26 @@
                         </div>
 
                         <!-- Fixed Arrow -->
-                        <div
-                            class="w-8 h-8 rounded-full bg-secondary-default text-primary-default flex items-center justify-center shrink-0 transition-transform duration-500"
-                            :class="active === 1 ? 'rotate-45' : ''">
+                        <div class="w-8 h-8 rounded-full bg-secondary-default text-primary-default flex items-center justify-center shrink-0 transition-transform duration-500" :class="active === 1 ? 'rotate-45' : ''">
 
-                            <svg
-                                class="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24">
-
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M7 17L17 7M17 7H8M17 7V16" />
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H8M17 7V16" />
                             </svg>
                         </div>
                     </div>
 
                     <!-- DESCRIPTION -->
-                    <div
-                        x-show="active === 1"
-                        x-collapse
-                        class="overflow-hidden">
-
-                        <p class="ml-[95px] text-secondary-default text-lg leading-relaxed max-w-3xl">
+                    <div x-show="active === 1" x-collapse class="overflow-hidden">
+                        <p class="ml-0 mt-2 text-secondary-default text-lg leading-relaxed max-w-3xl">
                             I design beautiful and conversion-focused
                             websites that improve user experience and
                             reflect your brand identity.
                         </p>
-
                     </div>
                 </div>
 
                 <!-- SERVICE 02 -->
-                <div
-                    @click="active = active === 2 ? null : 2"
-                    class="py-8 cursor-pointer transition-all duration-500">
+                <div @click="active = active === 2 ? null : 2" class="py-8 cursor-pointer transition-all duration-500">
 
                     <div class="flex justify-between items-center gap-6">
 
@@ -191,34 +176,19 @@
                         </div>
 
                         <!-- Fixed Arrow -->
-                        <div
-                            class="w-8 h-8 rounded-full bg-secondary-default text-primary-default
-            flex items-center justify-center
-            shrink-0 transition-transform duration-500"
-                            :class="active === 2 ? 'rotate-45' : ''">
+                        <div class="w-8 h-8 rounded-full bg-secondary-default text-primary-default flex items-center justify-center shrink-0 transition-transform duration-500" :class="active === 2 ? 'rotate-45' : ''">
 
-                            <svg
-                                class="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M7 17L17 7M17 7H8M17 7V16" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H8M17 7V16" />
                             </svg>
                         </div>
                     </div>
 
                     <!-- DESCRIPTION -->
-                    <div
-                        x-show="active === 2"
-                        x-collapse
-                        class="overflow-hidden">
+                    <div x-show="active === 2" x-collapse class="overflow-hidden">
 
-                        <p class="ml-[95px] text-secondary-default text-lg leading-relaxed max-w-3xl">
+                        <p class="ml-0 mt-2 text-secondary-default text-lg leading-relaxed max-w-3xl">
                             I design beautiful and conversion-focused
                             websites that improve user experience and
                             reflect your brand identity.
@@ -228,9 +198,7 @@
                 </div>
 
                 <!-- SERVICE 03 -->
-                <div
-                    @click="active = active === 3 ? null : 3"
-                    class="py-8 cursor-pointer transition-all duration-500">
+                <div @click="active = active === 3 ? null : 3" class="py-8 cursor-pointer transition-all duration-500 ">
 
                     <div class="flex justify-between items-center gap-6">
 
@@ -250,34 +218,18 @@
                         </div>
 
                         <!-- Fixed Arrow -->
-                        <div
-                            class="w-8 h-8 rounded-full bg-secondary-default text-primary-default
-            flex items-center justify-center
-            shrink-0 transition-transform duration-500"
-                            :class="active === 3 ? 'rotate-45' : ''">
+                        <div class="w-8 h-8 rounded-full bg-secondary-default text-primary-default flex items-center justify-center shrink-0 transition-transform duration-500" :class="active === 3 ? 'rotate-45' : ''">
 
-                            <svg
-                                class="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24">
-
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M7 17L17 7M17 7H8M17 7V16" />
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H8M17 7V16" />
                             </svg>
                         </div>
                     </div>
 
                     <!-- DESCRIPTION -->
-                    <div
-                        x-show="active === 3"
-                        x-collapse
-                        class="overflow-hidden">
+                    <div x-show="active === 3" x-collapse class="overflow-hidden">
 
-                        <p class="ml-[95px] text-secondary-default text-lg leading-relaxed max-w-3xl">
+                        <p class="ml-0 mt-2 text-secondary-default text-lg leading-relaxed max-w-3xl">
                             I design beautiful and conversion-focused
                             websites that improve user experience and
                             reflect your brand identity.
