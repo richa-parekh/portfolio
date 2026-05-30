@@ -6,7 +6,7 @@
 
 <!-- Hero Section -->
 <section class="min-h-screen bg-secondary-default flex items-center overflow-hidden ">
-    <div class="container mx-auto py-6 px-6 lg:px-12">
+    <div class="container mx-auto px-6 lg:px-12 py-20 lg:py-15">
         <div class="grid lg:grid-cols-2 justify-center items-center relative">
 
             <!-- Left Content -->
@@ -19,7 +19,7 @@
 
                 <h1 class="text-5xl text-center md:text-5xl xl:text-[70px]
                     font-semibold uppercase text-primary-default
-                    leading-[0.95] tracking-widest
+                    leading-[1.2] tracking-widest
                     lg:w-212.5 relative z-20 lg:text-left">
                     HELLO, I'M RICHA A <br>
                     WEB DEVELOPER
@@ -32,9 +32,9 @@
                 </p>
 
                 <!-- CTA Button -->
-                <a href="/contact"
+                <a href="/portfolio"
                     class="mt-10 block mx-auto text-xl bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide font-semibold border-2 border-primary-default transition duration-300 hover:scale-105 w-fit lg:mx-0">
-                    Let's Talk
+                    View Portfolio
                 </a>
             </div>
 
@@ -68,7 +68,7 @@
     </div> -->
 </section>
 <!-- Services Section -->
-<section id="services" x-data="{ active: 1 }" class="bg-primary-default text-secondary-default py-24 lg:py-32">
+<section id="services" x-data="{ active: 1 }" class="bg-primary-default text-secondary-default py-20 lg:py-15">
     <div class="container mx-auto px-6 lg:px-12">
 
         <div class="grid lg:grid-cols-12 gap-8 lg:gap-16">
@@ -116,7 +116,7 @@
             <div class="lg:col-span-7 divide-y divide-secondary-default">
 
                 <!-- SERVICE 01 -->
-                <div @click="active = active === 1 ? null : 1" class="py-8 cursor-pointer border-b border-secondary-default">
+                <div @mouseenter="active = 1" @click="active = active === 1 ? null : 1" class="py-8 cursor-pointer border-b border-secondary-default">
 
                     <!-- TOP ROW -->
                     <div class="flex justify-between items-center gap-6">
@@ -156,7 +156,7 @@
                 </div>
 
                 <!-- SERVICE 02 -->
-                <div @click="active = active === 2 ? null : 2" class="py-8 cursor-pointer transition-all duration-500">
+                <div @mouseenter="active = 2" @click="active = active === 2 ? null : 2" class="py-8 cursor-pointer transition-all duration-500">
 
                     <div class="flex justify-between items-center gap-6">
 
@@ -198,7 +198,7 @@
                 </div>
 
                 <!-- SERVICE 03 -->
-                <div @click="active = active === 3 ? null : 3" class="py-8 cursor-pointer transition-all duration-500 ">
+                <div @mouseenter="active = 3" @click="active = active === 3 ? null : 3" class="py-8 cursor-pointer transition-all duration-500 ">
 
                     <div class="flex justify-between items-center gap-6">
 
@@ -242,22 +242,181 @@
         </div>
 </section>
 <!-- Featured section -->
-<section class="py-20 md:py-24">
-    <div class="max-w-7xl mx-auto px-4 md:px-6">
-        <div class=" mb-14">
-            <div>
-                <h2 class="text-4xl font-bold"> Featured Work </h2>
-                <p class="text-primary-default mt-2">A few projects showcasing my work. </p>
+<section id="portfolio" class="bg-secondary-default py-20 lg:py-15">
+
+    <div class="container mx-auto px-6 lg:px-12">
+
+        <!-- SECTION HEADER -->
+        <div class="max-w-sm mb-20">
+
+            <div class="w-32 h-2 bg-primary-default mb-10"></div>
+            <h2 class="text-4xl text-primary-default lg:text-5xl font-bold uppercase leading-tight">
+                Selected <br class="hidden lg:block">
+                Works
+            </h2>
+
+            <p class="mt-3 text-lg text-primary-default leading-relaxed">
+                Take a look of some of my projects I have done.
+            </p>
+        </div>
+
+        <!-- PROJECT LIST -->
+        <div class="space-y-10">
+
+            <!-- PROJECT 1 -->
+            <div
+                class="overflow-hidden group ">
+
+                <div class="grid lg:grid-cols-2 items-center">
+
+                    <!-- IMAGE -->
+                    <div class="overflow-hidden h-[300px] lg:h-[500px]">
+                        <img
+                            src="{{ asset('images/projects/project_1.jpg') }}"
+                            alt="Project"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="h-full border border-primary-400 border-l-0 border-t-2 border-b-2 border-r-2 overflow-hidden group  flex items-center">
+                        <div class="p-8 lg:p-16">
+                            <span class="text-md text-primary-default">
+                                Foodies – Web Design
+                            </span>
+
+                            <h3 class="mt-4 text-3xl lg:text-4xl font-semibold text-primary-default">
+                                Food Delivery Web Design
+                            </h3>
+
+                            <p class="mt-4 text-primary-default leading-relaxed max-w-md">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit ut aliquam,
+                                purus sit amet luctus venenatis.
+                            </p>
+
+                            <a href="#"
+                                class="inline-flex items-center gap-3 mt-10 uppercase tracking-wide font-semibold text-primary-default group/link">
+
+                                Know More
+
+                                <span
+                                    class="w-8 h-8 rounded-full bg-primary-default text-secondary-default
+                                    flex items-center justify-center
+                                    transition duration-300 group-hover/link:rotate-45">
+
+                                    ↗
+                                </span>
+
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                </div>
             </div>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            @foreach($projects as $project)
-            <x-project-card
-                :project="$project" />
-            @endforeach
-        </div>
-        <div class="flex justify-center items-center">
-            <a href="/portfolio" class="mt-8 bg-primary-default text-secondary-default px-8 py-4 rounded-xl"> Browse All </a>
+
+            <!-- PROJECT 2 (REVERSED) -->
+            <div
+                class="overflow-hidden group">
+
+                <div class="grid lg:grid-cols-2 items-center">
+
+                    <!-- CONTENT -->
+                    <div class="h-full border border-primary-400 border-r-0 border-t-2 border-b-2 border-l-2 overflow-hidden group flex items-center">
+                        <div class="p-8 lg:p-16 order-2 lg:order-1">
+
+                            <span class="text-md text-primary-default">
+                                NFTime – WordPress Development
+                            </span>
+
+                            <h3 class="mt-4 text-3xl lg:text-4xl font-semibold text-primary-default">
+                                NFT Web Development
+                            </h3>
+
+                            <p class="mt-4 text-primary-default leading-relaxed max-w-md">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit ut aliquam,
+                                purus sit amet luctus venenatis.
+                            </p>
+
+                            <a href="#"
+                                class="inline-flex items-center gap-3 mt-10 uppercase tracking-wide font-semibold text-primary-default group/link">
+
+                                Know More
+
+                                <span
+                                    class="w-8 h-8 rounded-full bg-primary-default text-secondary-default
+                                    flex items-center justify-center
+                                    transition duration-300 group-hover/link:rotate-45">
+
+                                    ↗
+                                </span>
+
+                            </a>
+                        </div>
+                    </div>
+                    <!-- IMAGE -->
+                    <div class="overflow-hidden h-[300px] lg:h-[500px] order-1 lg:order-2">
+                        <img
+                            src="{{ asset('images/projects/project_2.jpg') }}"
+                            alt="Project"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div
+                class="overflow-hidden group">
+
+                <div class="grid lg:grid-cols-2 items-center">
+
+                    <!-- IMAGE -->
+                    <div class="overflow-hidden h-[300px] lg:h-[500px]">
+                        <img
+                            src="{{ asset('images/projects/project_3.jpg') }}"
+                            alt="Project"
+                            class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+                    </div>
+
+                    <!-- CONTENT -->
+                    <div class="h-full border border-primary-400 border-l-0 border-t-2 border-b-2 border-r-2 overflow-hidden group  flex items-center">
+                        <div class="p-8 lg:p-16">
+
+                            <span class="text-md text-primary-default">
+                                Dentos – Webflow Development
+                            </span>
+
+                            <h3 class="mt-4 text-3xl lg:text-4xl font-semibold text-primary-default">
+                                Dentist Web Development
+                            </h3>
+
+                            <p class="mt-4 text-primary-default leading-relaxed max-w-md">
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit ut aliquam,
+                                purus sit amet luctus venenatis.
+                            </p>
+
+                            <a href="#"
+                                class="inline-flex items-center gap-3 mt-10 uppercase tracking-wide font-semibold text-primary-default group/link">
+
+                                Know More
+
+                                <span
+                                    class="w-8 h-8 rounded-full bg-primary-default text-secondary-default
+                                    flex items-center justify-center
+                                    transition duration-300 group-hover/link:rotate-45">
+
+                                    ↗
+                                </span>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
