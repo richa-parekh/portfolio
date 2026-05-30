@@ -247,7 +247,7 @@
     <div class="container mx-auto px-6 lg:px-12">
 
         <!-- SECTION HEADER -->
-        <div class="max-w-sm mb-20">
+        <div class="max-w-sm mb-10 lg:mb-20">
 
             <div class="w-32 h-2 bg-primary-default mb-10"></div>
             <h2 class="text-4xl text-primary-default lg:text-5xl font-bold uppercase leading-tight">
@@ -264,8 +264,7 @@
         <div class="space-y-10">
 
             <!-- PROJECT 1 -->
-            <div
-                class="overflow-hidden group ">
+            <div class="overflow-hidden group ">
 
                 <div class="grid lg:grid-cols-2 items-center">
 
@@ -278,7 +277,7 @@
                     </div>
 
                     <!-- CONTENT -->
-                    <div class="h-full border border-primary-400 border-l-0 border-t-2 border-b-2 border-r-2 overflow-hidden group  flex items-center">
+                    <div class="h-full border border-primary-400 border-l-2 border-t-0 border-b-2 border-r-2 overflow-hidden group flex items-center lg:border-l-0 lg:border-t-2">
                         <div class="p-8 lg:p-16">
                             <span class="text-md text-primary-default">
                                 Foodies – Web Design
@@ -316,13 +315,12 @@
             </div>
 
             <!-- PROJECT 2 (REVERSED) -->
-            <div
-                class="overflow-hidden group">
+            <div class="overflow-hidden group">
 
                 <div class="grid lg:grid-cols-2 items-center">
 
                     <!-- CONTENT -->
-                    <div class="h-full border border-primary-400 border-r-0 border-t-2 border-b-2 border-l-2 overflow-hidden group flex items-center">
+                    <div class="h-full border border-primary-400 border-r-2 border-t-0 border-b-2 border-l-2 overflow-hidden group flex items-center order-2 lg:order-1 lg:border-t-2 lg:border-r-0">
                         <div class="p-8 lg:p-16 order-2 lg:order-1">
 
                             <span class="text-md text-primary-default">
@@ -381,7 +379,7 @@
                     </div>
 
                     <!-- CONTENT -->
-                    <div class="h-full border border-primary-400 border-l-0 border-t-2 border-b-2 border-r-2 overflow-hidden group  flex items-center">
+                    <div class="h-full border border-primary-400 border-l-2 border-t-0 border-b-2 border-r-2 overflow-hidden group flex items-center lg:border-t-2 lg:border-l-0">
                         <div class="p-8 lg:p-16">
 
                             <span class="text-md text-primary-default">
@@ -417,6 +415,12 @@
                 </div>
             </div>
 
+        </div>
+
+        <div class="text-center">
+            <a href="/portfolio" class="inline-block mt-12 bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide text-xl font-semibold transition duration-300 hover:scale-105">
+                View All Projects
+            </a>
         </div>
     </div>
 </section>
