@@ -541,11 +541,19 @@
     </div>
 </section>
 <!-- CTA section -->
-<section class="py-20 md:py-24 bg-secondary-default text-primary-default">
+<section class="hidden py-20 md:py-24 bg-secondary-default text-primary-default">
     <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="text-5xl font-bold">Let’s Build Your Website</h2>
         <p class="text-primary-default mt-5 text-lg">Need a website for your business? Let’s discuss your project.</p>
-        <a href="/contact" class="inline-block mt-8 bg-primary-default text-secondary-default px-10 py-4 uppercase tracking-wide font-semibold border-2 border-primary-default transition duration-300 hover:scale-105">Contact Me</a>
+        <a href="/contact" class="inline-block mt-8 bg-primary-default text-secondary-default text-xl px-10 py-4 uppercase tracking-wide font-semibold transition duration-300 hover:scale-105">Contact Me</a>
+    </div>
+</section>
+<!-- CTA section -->
+<section class="py-20 md:py-24 bg-primary-default text-secondary-default">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-5xl font-bold">Let’s Build Your Website</h2>
+        <p class="text-secondary-default mt-5 text-lg">Need a website for your business? Let’s discuss your project.</p>
+        <a href="/contact" class="inline-block mt-8 bg-secondary-default text-primary-default text-xl px-10 py-4 uppercase tracking-wide font-semibold transition duration-300 hover:scale-105">Contact Me</a>
     </div>
 </section>
 @endsection

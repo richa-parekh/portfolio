@@ -6,14 +6,14 @@
 
             <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
-                <a href="/" class="{{ request()->is('/') ? 'text-primary-default font-semibold' : 'hover:text-primary-default transition' }} font-lato"> Home </a>
-                <a href="/services" class="{{ request()->is('services') ? 'text-primary-default font-semibold' : 'hover:text-primary-default transition' }} font-lato"
+                <a href="/" class="{{ request()->is('/') ? 'text-primary-default font-bold' : 'text-primary-default font-medium' }} font-lato text-medium"> Home </a>
+                <a href="/services" class="{{ request()->is('services') ? 'text-primary-default font-bold' : 'text-primary-default font-medium' }} font-lato text-medium"
                 > Services </a>
-                <a href="/portfolio" class="{{ request()->is('portfolio') ? 'text-primary-default font-semibold' : 'hover:text-primary-default transition' }} font-lato"
+                <a href="/portfolio" class="{{ request()->is('portfolio') ? 'text-primary-default font-bold' : 'text-primary-default font-medium' }} font-lato text-medium"
                 > Portfolio </a>
-                <a href="/about" class="{{ request()->is('about') ? 'text-primary-default font-semibold' : 'hover:text-primary-default transition' }} font-lato"
+                <a href="/about" class="{{ request()->is('about') ? 'text-primary-default font-bold' : 'text-primary-default font-medium' }} font-lato text-medium"
                 > About </a>
-                <a href="/contact" class="{{ request()->is('contact') ? 'text-secondary-default bg-primary-default font-semibold' : 'text-primary-default transition' }} border-2 border-primary-default px-7 py-1 hover:opacity-90 hover:bg-primary-default hover:text-secondary-default font-lato transition duration-300" > Contact </a>
+                <a href="/contact" class="{{ request()->is('contact') ? 'text-secondary-default bg-primary-default ' : 'text-primary-default' }} font-medium border-2 border-primary-default px-7 py-1 hover:opacity-90 hover:bg-primary-default hover:text-secondary-default font-lato text-medium transition duration-300 hover:scale-105" > Contact </a>
             </div>
 
             <!-- Mobile Contact -->
