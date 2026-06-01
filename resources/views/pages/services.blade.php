@@ -5,10 +5,10 @@
 @section('content')
 
 <!-- Hero -->
-<section class="py-20 md:py-24 bg-gray-50">
+<section class="py-20 md:py-24 bg-secondary-default">
     <div class="max-w-4xl mx-auto px-6 text-center">
-        <h1 class="text-5xl font-bold"> My Services </h1>
-        <p class="mt-6 text-lg text-gray-600">
+        <h1 class="text-5xl font-bold text-primary-default"> My Services </h1>
+        <p class="mt-6 text-lg text-primary-default">
             I help businesses build fast,
             modern and responsive websites
             that improve their online presence.
@@ -17,7 +17,7 @@
 </section>
 
 <!-- Services -->
-<section class="py-20 md:py-24">
+<section class="py-20 md:py-24 bg-primary-default">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
         <x-section-heading
             title="What I Offer"
@@ -25,7 +25,10 @@
         />
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- WordPress -->
-            <div class="bg-white p-8 rounded-3xl shadow-sm">
+            <div class="bg-secondary-default p-8 shadow-sm">
+                <div>
+                    <img src="" alt="">
+                </div>
                 <h3 class="text-2xl font-semibold">
                     WordPress Development
                 </h3>
@@ -39,7 +42,10 @@
             </div>
 
             <!-- Laravel -->
-            <div class="bg-white p-8 rounded-3xl shadow-sm">
+            <div class="bg-secondary-default p-8 shadow-sm">
+                <div>
+                    <img src="" alt="">
+                </div>
                 <h3 class="text-2xl font-semibold">
                     Laravel Development
                 </h3>
@@ -53,7 +59,10 @@
             </div>
 
             <!-- Design -->
-            <div class="bg-white p-8 rounded-3xl shadow-sm">
+            <div class="bg-secondary-default p-8 shadow-sm">
+                <div>
+                    <img src="" alt="">
+                </div>
                 <h3 class="text-2xl font-semibold">
                     Website Design
                 </h3>
