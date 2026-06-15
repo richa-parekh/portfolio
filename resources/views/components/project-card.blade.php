@@ -1,7 +1,8 @@
-<div class="bg-secondary-default overflow-hidden flex flex-col h-full">
+<div class="bg-secondary-default overflow-hidden flex flex-col h-full group">
 
-    <img src="{{ asset('images/projects/' . $project->image) }}" alt="{{ $project->title }}" class="w-full h-60 object-cover" >
-
+    <div class="overflow-hidden h-[200px] lg:h-[300px]">
+        <img src="{{ asset('images/projects/' . $project->image) }}" alt="{{ $project->title }}" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" >
+    </div>
     <div class="p-6 flex flex-col flex-1 items-start">
         
         <span class="text-sm text-primary-600 font-medium bg-primary-100 px-2 py-1">
